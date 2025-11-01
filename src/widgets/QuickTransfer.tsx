@@ -2,9 +2,9 @@ import { Card } from '../shared/components/Card'
 import { Button } from '../shared/components/Button'
 import type { FC } from 'react'
 
-export const QuickTransfer: FC = () => {
+export const QuickTransfer: FC<{ className?: string }> = ({ className }) => {
   return (
-    <Card className="p-4">
+    <Card className={`p-4 ${className ?? ''}`}>
       <h3 className="text-sm mb-3 text-white/70">Quick Transfer</h3>
       <div className="flex items-center gap-3 mb-4">
         <div className="flex -space-x-2">

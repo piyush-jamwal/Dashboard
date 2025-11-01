@@ -8,12 +8,6 @@ export function Sidebar() {
         <a className="hover:text-white" href="#">
           Home
         </a>
-        <a className="hover:text-white" href="#">
-          Markets
-        </a>
-        <a className="hover:text-white" href="#">
-          Portfolio
-        </a>
       </nav>
     </aside>
   )

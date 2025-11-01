@@ -33,6 +33,8 @@ export const StatCard: FC<Props> = ({ coin }) => {
       </div>
       <div className="h-16">
         <LineChart
+          className="h-full"
+          compact
           data={(coin.sparkline_in_7d?.price || []).map((y, i) => ({
             x: i,
             y,

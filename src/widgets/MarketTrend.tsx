@@ -2,10 +2,13 @@ import { Card } from '../shared/components/Card'
 import type { Coin } from '../entities/coin'
 import type { FC } from 'react'
 
-export const MarketTrend: FC<{ coins: Coin[] }> = ({ coins }) => {
+export const MarketTrend: FC<{ coins: Coin[]; className?: string }> = ({
+  coins,
+  className,
+}) => {
   const top = coins.slice(0, 6)
   return (
-    <Card className="p-4">
+    <Card className={`p-4 ${className ?? ''}`}>
       <h3 className="text-sm mb-3 text-white/70">Market Trend</h3>
       <div className="text-xs grid grid-cols-[1.5fr_1fr_1fr] gap-x-2 text-white/60 mb-2">
         <div>Name</div>

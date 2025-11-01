@@ -39,21 +39,20 @@ export function DashboardPage() {
         {/* Stats strip */}
         {!isLoading && <StatsRow coins={sorted} />}
 
-        {/* Bottom row: overview + right column */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <Card className="lg:col-span-2">
+        {/* Bottom row: three-up responsive layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-6 items-stretch">
+          <Card className="">
             <h2 className="text-sm mb-3 text-white/70">Market Overview</h2>
             <LineChart
+              showYAxis
               data={(sorted?.[0]?.sparkline_in_7d?.price || []).map((y, i) => ({
                 x: i,
                 y,
               }))}
             />
           </Card>
-          <div className="space-y-6">
-            <QuickTransfer />
-            <MarketTrend coins={sorted} />
-          </div>
+          <QuickTransfer className="h-full" />
+          <MarketTrend className="h-full" coins={sorted} />
         </div>
 
         {/* Markets table */}

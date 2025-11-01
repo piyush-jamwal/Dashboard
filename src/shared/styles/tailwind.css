@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg: #0f0f16;
+	--card: #1a1b23;
+	--text: #e5e7eb;
+}
+
+[data-theme='light'] {
+	--bg: #ffffff;
+	--card: #f3f4f6;
+	--text: #111827;
+}
+
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+.card {
+	@apply rounded-xl bg-[color:var(--card)] shadow-sm border border-white/5;
+}
+
+

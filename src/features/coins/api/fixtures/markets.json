@@ -1,0 +1,34 @@
+[
+  {
+    "id": "bitcoin",
+    "symbol": "btc",
+    "name": "Bitcoin",
+    "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png",
+    "current_price": 68950,
+    "price_change_percentage_24h": 2.1,
+    "market_cap_rank": 1,
+    "sparkline_in_7d": { "price": [65000,66000,65500,67000,68000,69000] }
+  },
+  {
+    "id": "ethereum",
+    "symbol": "eth",
+    "name": "Ethereum",
+    "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png",
+    "current_price": 3650,
+    "price_change_percentage_24h": -0.8,
+    "market_cap_rank": 2,
+    "sparkline_in_7d": { "price": [3300,3400,3380,3500,3600,3650] }
+  },
+  {
+    "id": "solana",
+    "symbol": "sol",
+    "name": "Solana",
+    "image": "https://assets.coingecko.com/coins/images/4128/large/solana.png",
+    "current_price": 168,
+    "price_change_percentage_24h": 4.5,
+    "market_cap_rank": 5,
+    "sparkline_in_7d": { "price": [150,152,155,160,165,168] }
+  }
+]
+
+

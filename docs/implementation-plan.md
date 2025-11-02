@@ -4,6 +4,21 @@
 
 Vite + React + TypeScript + Tailwind. Redux Toolkit with RTK Query, React Router, Recharts for charts, Jest + Testing Library for tests, and Storybook for component previews. Dev uses MSW with fixtures; production can point to a real API via env.
 
+## Tech Stack
+
+| Category                 | Choice                       | Reason                                       |
+| ------------------------ | ---------------------------- | -------------------------------------------- |
+| **Framework**            | React + Vite                 | Fast dev build system with modern React      |
+| **Language**             | TypeScript                   | Type safety & scalability                    |
+| **Styling**              | Tailwind CSS                 | Utility-first, fast prototyping, responsive  |
+| **State Management**     | Redux Toolkit + RTK Query    | Scalable global state & API caching          |
+| **Routing**              | React Router                 | For multi-page scalability                   |
+| **Testing**              | Jest + React Testing Library | Unit testing for components & logic          |
+| **UI Documentation**     | Storybook                    | Component visualization & design consistency |
+| **Linting & Formatting** | ESLint + Prettier            | Enforces code standards & readability        |
+| **Build & Deploy**       | Vite / Netlify               | Lightweight bundling & hosting               |
+| **Polyfills (optional)** | vite-plugin-legacy           | Cross-browser support for older browsers     |
+
 ## Key Decisions (as implemented)
 
 - Data source

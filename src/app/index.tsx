@@ -1,17 +1,13 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { DashboardPage } from '../pages/DashboardPage'
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from './providers/ThemeProvider'
+import { AppRoutes } from '../routes'
 
 export function App() {
-	return (
-		<ThemeProvider>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<DashboardPage />} />
-				</Routes>
-			</BrowserRouter>
-		</ThemeProvider>
-	)
+  return (
+    <ThemeProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </ThemeProvider>
+  )
 }
-
-

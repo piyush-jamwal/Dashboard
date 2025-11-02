@@ -56,7 +56,7 @@ export function DashboardTable({
             <Td className="flex items-center gap-2">
               <img src={c.image} alt="" className="w-5 h-5 rounded-full" />
               <span className="font-medium">{c.name}</span>
-              <span className="text-white/50 uppercase">{c.symbol}</span>
+              <span className="text-muted-weak uppercase">{c.symbol}</span>
             </Td>
             <Td>${c.current_price.toLocaleString()}</Td>
             <Td

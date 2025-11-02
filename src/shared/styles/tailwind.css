@@ -3,28 +3,60 @@
 @tailwind utilities;
 
 :root {
-	--bg: #0f0f16;
-	--card: #1a1b23;
-	--text: #e5e7eb;
+  --bg: #0f0f16;
+  --card: #1a1b23;
+  --text: #e5e7eb;
+  --muted: rgba(229, 231, 235, 0.7);
+  --muted-weak: rgba(229, 231, 235, 0.6);
+  --border: rgba(255, 255, 255, 0.06);
+  --control-bg: rgba(255, 255, 255, 0.05);
+  --control-border: rgba(255, 255, 255, 0.1);
+  --accent: #6366f1; /* indigo-500 */
 }
 
 [data-theme='light'] {
-	--bg: #ffffff;
-	--card: #f3f4f6;
-	--text: #111827;
+  --bg: #ffffff;
+  --card: #f3f4f6;
+  --text: #111827;
+  --muted: rgba(17, 24, 39, 0.65);
+  --muted-weak: rgba(17, 24, 39, 0.5);
+  --border: rgba(0, 0, 0, 0.08);
+  --control-bg: rgba(0, 0, 0, 0.04);
+  --control-border: rgba(0, 0, 0, 0.12);
+  --accent: #4f46e5; /* indigo-600 */
 }
 
-html, body, #root {
-	height: 100%;
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
-	background-color: var(--bg);
-	color: var(--text);
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .card {
-	@apply rounded-xl bg-[color:var(--card)] shadow-sm border border-white/5;
+  @apply rounded-xl bg-[color:var(--card)] shadow-sm border;
+  border-color: var(--border);
 }
 
-
+/* Reusable utility classes */
+.text-muted {
+  color: var(--muted);
+}
+.text-muted-weak {
+  color: var(--muted-weak);
+}
+.section-title {
+  @apply text-sm mb-3;
+  color: var(--muted);
+}
+.input {
+  @apply w-full rounded-lg py-2 pr-3 outline-none focus:ring-2;
+  background-color: var(--control-bg);
+  border: 1px solid var(--control-border);
+  /* Tailwind ring with CSS var color */
+  --tw-ring-color: var(--accent);
+}

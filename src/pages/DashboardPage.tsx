@@ -42,7 +42,7 @@ export function DashboardPage() {
         {/* Bottom row: three-up responsive layout */}
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-6 items-stretch">
           <Card className="">
-            <h2 className="text-sm mb-3 text-white/70">Market Overview</h2>
+            <h2 className="section-title">Market Overview</h2>
             <LineChart
               showYAxis
               data={(sorted?.[0]?.sparkline_in_7d?.price || []).map((y, i) => ({
@@ -57,7 +57,7 @@ export function DashboardPage() {
 
         {/* Markets table */}
         <Card>
-          <h2 className="text-sm mb-3 text-white/70">Markets</h2>
+          <h2 className="section-title">Markets</h2>
           {isLoading ? (
             <p>Loading...</p>
           ) : (

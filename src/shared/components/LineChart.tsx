@@ -51,8 +51,8 @@ export function LineChart({
           {!compact && (
             <Tooltip
               contentStyle={{
-                background: '#1a1b23',
-                border: '1px solid rgba(255,255,255,0.06)',
+                background: 'var(--card)',
+                border: `1px solid var(--border)`,
               }}
             />
           )}

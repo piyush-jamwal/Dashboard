@@ -9,8 +9,8 @@ export const MarketTrend: FC<{ coins: Coin[]; className?: string }> = ({
   const top = coins.slice(0, 6)
   return (
     <Card className={`p-4 ${className ?? ''}`}>
-      <h3 className="text-sm mb-3 text-white/70">Market Trend</h3>
-      <div className="text-xs grid grid-cols-[1.5fr_1fr_1fr] gap-x-2 text-white/60 mb-2">
+      <h3 className="section-title">Market Trend</h3>
+      <div className="text-xs grid grid-cols-[1.5fr_1fr_1fr] gap-x-2 text-muted-weak mb-2">
         <div>Name</div>
         <div className="text-right">Last Price</div>
         <div className="text-right">24h Change</div>

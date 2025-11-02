@@ -10,14 +10,18 @@ export function Table({
 
 export function THead({ children }: PropsWithChildren) {
   return (
-    <thead className="text-left text-xs uppercase text-white/60">
+    <thead className="text-left text-xs uppercase text-muted-weak">
       {children}
     </thead>
   )
 }
 
 export function TBody({ children }: PropsWithChildren) {
-  return <tbody className="divide-y divide-white/5">{children}</tbody>
+  return (
+    <tbody className="divide-y" style={{ borderColor: 'var(--border)' }}>
+      {children}
+    </tbody>
+  )
 }
 
 export function Th({

@@ -9,4 +9,4 @@ Dev setup:
 
 MSW mocks are enabled by default via `VITE_USE_MOCKS=true`.
 
-
+## Read implementation and architecture under docs/implementation-plan.md

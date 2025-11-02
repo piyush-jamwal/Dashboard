@@ -9,4 +9,8 @@ Dev setup:
 
 MSW mocks are enabled by default via `VITE_USE_MOCKS=true`.
 
+# Story book
+
+npm run storybook
+
 ## Read implementation and architecture under docs/implementation-plan.md
